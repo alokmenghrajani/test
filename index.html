@@ -1,0 +1,165 @@
+<html>
+<!--
+                        /\
+                       /  |
+                       \  o
+                   _.-`/`-._
+       _         _/         \_         _
+      ) `-._   _/  /O\   /O\  \_   _.-` (
+     )      `-/    `-'   `-'    \-`      (
+     )     _.-|      ___        |-._     (
+      )_.-`   \   .-'   `-._    /   `-._(
+               \   `-.___.--`  /
+                "-._       _.-"
+                    "-._.-"
+
+ Phishing site by Alok. Welcome to the team! :)
+
+-->
+<head>
+<style>
+  .col {
+      width: 960px;
+      margin: 10px auto;
+  }
+  hr {
+    height: 2px;
+    width: 100%;
+    border: 0;
+    border-top: 3px solid black;
+  }
+  body {
+    font-family: myriad-pro,"Helvetica Neue",Helvetica,sans-serif;
+  }
+  p {
+    margin: 0 10px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 54px;
+  }
+  #dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444;
+    z-index: 1000;
+    opacity: 0.2;
+  }
+  #pass {
+    font-size: 20px;
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 40%;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1100;
+  }
+  #pass div {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+  #pass table {
+    padding: 10px;
+  }
+  #pass input {
+    height: 30px;
+    width: 200px;
+  }
+  button {
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    border-radius: 2px;
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <script>
+function save() {
+  dialog.className = '';
+  pass.className = '';
+}
+  </script>
+  <div id="dialog" class="hidden">
+  </div>
+  <div id="pass" class="hidden">
+    <div>Login with your ldap credentials</div>
+    <table>
+      <tr><td></td><td><input type="text" value="" placeholder="Email address"/></td></tr>
+      <tr><td></td><td><input type="password" value="" placeholder="Password"/></td></tr>
+      <tr><td></td><td><button onclick="window.location='phished.html'">Login</button></td></tr>
+    </table>
+  </div>
+  <div class="col">
+    <img width="191" height="68" src="logo.svg">
+    <hr/>
+    <h1>Wellness benefit election</h1>
+    <table>
+      <tr valign="top">
+        <td>
+          <p><b>Offsite-General</b></p>
+          <p>&nbsp;</p>
+          <p>$150 per quarter wellness stipend</p>
+          <p>&nbsp;</p>
+          <p>Use towards anything you consider wellness:</p>
+          <p>Gym membership fees</p>
+          <p>Personal Trainer</p>
+          <p>Healthy Groceries</p>
+          <p>Activities for your children</p>
+          <p>...are just a few examples</p>
+          <p>&nbsp;</p>
+          <p>This stipend will appear in your paycheck</p>
+          <p>twice a month as ~$25</p>
+        </td>
+        <td>
+          <p><b>Offsite - Fitness SF</b></p>
+          <p>&nbsp;</p>
+          <p>Direct billing via payroll deductions</p>
+          <p>&nbsp;</p>
+          <p>$49.95 per month membership</p>
+          <p>Access to 6 locations in SF/OAK</p>
+          <p>&nbsp;</p>
+          <p>Enrollment through Fitness S.F. required</p>
+          <p>once Workday submission is complete</p>
+          <p>Stop by the Market Street Location or e-mail our</p>
+          <p>account rep: Rosie Lee</p>
+        </td>
+        <td>
+          <p><b>Onsite Wellness</b></p>
+          <p>&nbsp;</p>
+          <p>Access to onsite Wellness Center at a reduced cost</p>
+          <p>&nbsp;</p>
+
+          <p>Taxable Fringe Benefit of ~$25 twice/month</p>
+          <p>Massage - $5 copay</p>
+          <p>Chiropractic - $5 copay</p>
+          <p>Acupuncture - $5 copay</p>
+          <p>Mind, Body, Health - $5 copay</p>
+          <p>&nbsp;</p>
+          <p>The staff of therapists, doctors, and instructors</p>
+        <p>are certified and licensed diagnosticians + practitioners.</p>
+        <p>New Hires: Visit go/behealthy on 9</p>
+        <p>to be registered on the <a href="https://square.crossoverhealth.com/signin">Crossover Health Portal</a></p>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><input type="radio" name="x"></td>
+      <td><input type="radio" name="x"></td>
+      <td><input type="radio" name="x"></td>
+    </tr>
+    </table>
+    <br/>
+    <button onclick="save()">Save</button>
+  </div>
+</body>
+</html>
